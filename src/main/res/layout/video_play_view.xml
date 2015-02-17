@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <VideoView
+            android:id="@+id/video_play_videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <angel.zhuoxiu.media.ui.MediaButton
+            android:id="@+id/video_play_pauseButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            android:visibility="invisible"
+            app:srcPressed="@drawable/ic_media_pause_glow"
+            app:srcNormal="@drawable/ic_media_pause_normal" />
+
+        <angel.zhuoxiu.media.ui.MediaButton
+            android:id="@+id/video_play_playButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            app:srcPressed="@drawable/ic_media_play_glow"
+            app:srcNormal="@drawable/ic_media_play_normal" />
+    </FrameLayout>
+
+</LinearLayout>
